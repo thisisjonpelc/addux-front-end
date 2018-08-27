@@ -1,0 +1,24 @@
+.comments-form{
+    padding: 0 2rem;
+    margin-top:auto;
+
+
+    &__label{
+        display:block;
+        font-size:1.9rem;
+        margin-bottom: 1.7rem;
+    }
+
+    &__comments{
+        font-family: "Georgia", serif;
+        width:calc(100% - 1.7rem);
+        resize:none;
+        margin-left: 1.7rem;
+        border:none;
+        height:10rem;
+
+        &:focus{
+            outline-color:$gray-darker;
+        }
+    }
+}

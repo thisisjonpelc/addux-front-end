@@ -1,0 +1,49 @@
+.app-nav{
+    display:flex;
+    fill: $gray-base;
+    margin-right: 9rem;
+
+
+    &__icon-box{
+
+        align-items:center;
+        display:flex;
+        height:3.5rem;
+        width:3.5rem;
+
+
+        &:not(:last-child){
+            margin-right:2.5rem;
+        }
+
+        &:hover{
+            cursor: pointer;
+            color:$gray-dark;
+            fill:$gray-dark;
+        }
+
+        &--invert{
+            fill:$white;
+            background-color:$brand-primary;
+
+            &:hover{
+                color:$gray-dark;
+            }
+        }
+    }
+
+
+    &__icon{
+        height: 3rem;
+        width: 3rem;
+        fill: inherit;
+        margin: 0 auto;
+
+
+        &--small{
+            height:2rem;
+            width:2rem;
+        }
+    }
+}
+

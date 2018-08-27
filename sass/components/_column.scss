@@ -1,0 +1,15 @@
+.column{
+    border-left: 1px solid $gray-darker;
+    border-right: 1px solid $gray-darker;
+    border-radius: 1rem;
+    display:flex;
+    flex-direction:column;
+    flex-shrink: 0;
+    padding: 1.8rem 2.5rem;
+    width: 39.2rem;
+
+    &__question{
+        font-size:1.9rem;
+        padding:0 1.8rem;
+    }
+}

@@ -1,0 +1,27 @@
+.info-box{
+
+    &__title{
+        margin-bottom:1rem;
+    }
+
+    &__progress-bar{
+        width:50rem;
+        height:1.2rem;
+        background-color:$gray-light;
+        border-radius: 1000px;
+        position:relative;
+    
+        &::after{
+            content:"";
+            width:25rem;
+            height:1.2rem;
+            background-color:$brand-primary;
+            position: absolute;
+            border-radius:1000px;
+            top:0px;
+            left:0px;
+        }
+    
+    }
+
+}

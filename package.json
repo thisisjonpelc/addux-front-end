@@ -1,0 +1,16 @@
+{
+  "name": "addux-front-end",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jon Pelc",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
