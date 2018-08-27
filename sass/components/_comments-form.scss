@@ -5,17 +5,18 @@
 
     &__label{
         display:block;
-        font-size:1.9rem;
-        margin-bottom: 1.7rem;
+        font-size:1.6rem;
+        margin-bottom: .5rem;
     }
 
     &__comments{
         font-family: "Georgia", serif;
+        font-size:1.4rem;
         width:calc(100% - 1.7rem);
         resize:none;
         margin-left: 1.7rem;
         border:none;
-        height:10rem;
+        height:5rem;
 
         &:focus{
             outline-color:$gray-darker;
