@@ -14,7 +14,8 @@ body {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #333333; }
+  color: #333333;
+  line-height: 1.2; }
 
 .app-nav {
   display: flex;
@@ -48,11 +49,14 @@ body {
   border-left: 1px solid #333333;
   border-right: 1px solid #333333;
   border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
   flex-shrink: 0;
   padding: .8rem 2rem;
   width: 40rem; }
+  .column__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #ebe8e2; }
   .column__question {
     font-size: 1.6rem;
     padding: 0 1.8rem; }
@@ -116,14 +120,14 @@ body {
 
 .info-box__progress-bar {
   width: 50rem;
-  height: 1.2rem;
+  height: .5rem;
   background-color: #cccccc;
   border-radius: 1000px;
   position: relative; }
   .info-box__progress-bar::after {
     content: "";
     width: 25rem;
-    height: 1.2rem;
+    height: .5rem;
     background-color: #7798A6;
     position: absolute;
     border-radius: 1000px;
