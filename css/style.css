@@ -17,6 +17,41 @@ body {
   color: #333333;
   line-height: 1.2; }
 
+.accordion {
+  margin-top: 1.5rem;
+  padding: 0 1.8rem; }
+  .accordion__item {
+    margin: 1.5rem 0; }
+    .accordion__item input {
+      display: none; }
+      .accordion__item input:checked ~ .accordion__text {
+        height: 10rem; }
+      .accordion__item input:checked ~ .accordion__label .accordion__icon {
+        transform: rotate(180deg); }
+  .accordion__label {
+    display: flex;
+    font-size: 1.4rem;
+    height: 2.5rem;
+    width: 100%;
+    background-color: #7798A6;
+    color: #FFFFFF;
+    align-items: center;
+    padding: 0 2rem; }
+  .accordion__text {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out; }
+  .accordion__input {
+    resize: none;
+    height: 10rem;
+    width: 100%; }
+  .accordion__icon {
+    margin-left: auto;
+    height: 2rem;
+    width: 2rem;
+    fill: #FFFFFF;
+    transition: all .3s ease-in-out; }
+
 .app-nav {
   display: flex;
   fill: #999999; }
@@ -66,8 +101,9 @@ body {
   border: 1px solid #666666;
   color: #666666;
   display: flex;
+  flex-shrink: 0;
   height: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   padding: 0 2rem;
   position: relative; }
   .column-header__icon {

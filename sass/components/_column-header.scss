@@ -4,8 +4,9 @@
     border: 1px solid $gray-medium;
     color: $gray-medium;
     display:flex;
+    flex-shrink: 0;
     height:4rem;
-    margin-bottom:2rem;
+    margin-bottom:1.5rem;
     padding:0 2rem;
     position:relative;
 

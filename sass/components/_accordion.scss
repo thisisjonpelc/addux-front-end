@@ -1,0 +1,56 @@
+.accordion{
+    
+    margin-top:1.5rem;
+    padding: 0 1.8rem;
+
+    &__item{
+
+        margin:1.5rem 0;
+        
+        input{
+            display:none;
+        
+            &:checked{
+                
+                & ~ .accordion__text{
+                    height:10rem;
+                }
+
+                & ~ .accordion__label .accordion__icon{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    &__label{
+        display:flex;
+        font-size:1.4rem;
+        height:2.5rem;
+        width:100%;
+        background-color: $brand-primary;
+        color:$white;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    &__text{
+        height:0px;
+        overflow:hidden;
+        transition: height 0.3s ease-in-out
+    }
+
+    &__input{
+        resize:none;
+        height:10rem;
+        width:100%;
+    }
+
+    &__icon{
+        margin-left:auto;
+        height:2rem;
+        width:2rem;
+        fill:$white;
+        transition:all .3s ease-in-out;
+    }
+}

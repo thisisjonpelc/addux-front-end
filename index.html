@@ -1,178 +1,675 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">-->
-        <link rel="stylesheet" href="/css/reset.css">
-        <!-- <link rel="stylesheet" href="/css/normalize.css">-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        
-        <title>Addux!</title>
-    </head>
-    <body>
-        <div class="app">
-            <header class="header">
-                <img src="img/addux-logo.png" class="logo">
 
-                <div class="info-box">
-                    <h1 class="info-box__title">Allison's Test #8</h1>
-                    <div class="info-box__progress-bar"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="/css/reset.css">
+    <!-- <link rel="stylesheet" href="/css/normalize.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Addux!</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <img src="img/addux-logo.png" class="logo">
+
+            <div class="info-box">
+                <h1 class="info-box__title">Allison's Test #8</h1>
+                <div class="info-box__progress-bar"></div>
+            </div>
+
+            <nav class="app-nav">
+                <div class="app-nav__icon-box">
+
+                    <svg class="app-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-share-alt-solid"></use>
+                    </svg>
                 </div>
+                <div class="app-nav__icon-box">
+                    <svg class="app-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-user-solid"></use>
+                    </svg>
+                </div>
+                <div class="app-nav__icon-box">
+                    <svg class="app-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-pencil-alt-solid"></use>
+                    </svg>
+                </div>
+                <div class="app-nav__icon-box">
+                    <svg class="app-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-list-solid"></use>
+                    </svg>
+                </div>
+                <div class="app-nav__icon-box app-nav__icon-box--invert">
+                    <svg class="app-nav__icon app-nav__icon-small">
+                        <use xlink:href="img/sprite.svg#icon-plus-solid"></use>
+                    </svg>
+                </div>
+            </nav>
 
-                <nav class="app-nav">
-                    <div class="app-nav__icon-box">
+        </header>
 
-                        <svg class="app-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-share-alt-solid"></use>
+        <main class="main-content">
+
+            <div class="column">
+                <div class="column__content">
+                    <div class="column-header">
+                        <span class="column-header__text">Objective</span>
+                        <svg class="column-header__icon">
+                            <use xlink:href="img/sprite.svg#icon-video-solid"></use>
                         </svg>
                     </div>
-                    <div class="app-nav__icon-box">
-                            <svg class="app-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-user-solid"></use>
-                            </svg>
-                    </div>
-                    <div class="app-nav__icon-box">
-                        <svg class="app-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-pencil-alt-solid"></use>
-                        </svg>
-                    </div>
-                    <div class="app-nav__icon-box">
-                        <svg class="app-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-list-solid"></use>
-                        </svg>
-                    </div>
-                    <div class="app-nav__icon-box app-nav__icon-box--invert">
-                        <svg class="app-nav__icon app-nav__icon-small">
-                            <use xlink:href="img/sprite.svg#icon-plus-solid"></use>
-                        </svg>
-                    </div>
-                </nav>
+                    <p class="column__question">
+                        What is the one thing you need your team to focus on in the next 12 months?
+                    </p>
 
-            </header>
-
-            <main class="main-content">
-
-                <div class="column">
-                    <div class="column__content">
-                        <div class="column-header">
-                            <span class="column-header__text">Objective</span>
-                            <svg class="column-header__icon">
-                                    <use xlink:href="img/sprite.svg#icon-video-solid"></use>
-                            </svg>
-                        </div>
-                        <p class="column__question">
-                            What is the one thing you need your team to focus on in the next 12 months?
-                        </p>
-
-                        <div class="comments-form">
-                            <span class="comments-form__label">Comments:</span>
-                            <textarea class="comments-form__comments" placeholder="Comments go here"></textarea>
-                        </div>
+                    <div class="comments-form">
+                        <span class="comments-form__label">Comments:</span>
+                        <textarea class="comments-form__comments" placeholder="Comments go here"></textarea>
                     </div>
                 </div>
-                <div class="column">
-                        <div class="column__content">
+            </div>
+            <div class="column">
+                <div class="column__content">
                     <div class="column-header">
                         <span class="column-header__text">Goals</span>
                         <svg class="column-header__icon">
-                                <use xlink:href="img/sprite.svg#icon-video-solid"></use>
+                            <use xlink:href="img/sprite.svg#icon-video-solid"></use>
                         </svg>
                     </div>
                     <p class="column__question">
                         Question or Subtile goes here. Lorem ipsum dolar sit amet, consectetur d tempor incididunt ut
                     </p>
 
-                    <div class="comments-form">
-                            <span class="comments-form__label">Comments:</span>
-                            <textarea class="comments-form__comments" placeholder="Comments go here"></textarea>
+
+                    <div class="accordion">
+                        <div class="accordion__item">
+                            <input id="goal-1" type="checkbox">
+                            <label class="accordion__label" for="goal-1">
+                                <span>Goal 1</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="goal-2" type="checkbox">
+                            <label class="accordion__label" for="goal-2">
+                                <span>Goal 2</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="goal-3" type="checkbox">
+                            <label class="accordion__label" for="goal-3">
+                                <span>Goal 3</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="comments-form">
+                        <span class="comments-form__label">Comments:</span>
+                        <textarea class="comments-form__comments" placeholder="Comments go here"></textarea>
                     </div>
                 </div>
-                <div class="column">
-                        <div class="column__content">
+            </div>
+            <div class="column">
+                <div class="column__content">
                     <div class="column-header">
                         <span class="column-header__text">Projects</span>
                         <svg class="column-header__icon">
-                                <use xlink:href="img/sprite.svg#icon-video-solid"></use>
+                            <use xlink:href="img/sprite.svg#icon-video-solid"></use>
                         </svg>
                     </div>
-                    <div class="comments-form">
-                            <span class="comments-form__label">Comments:</span>
-                            <textarea class="comments-form__comments" placeholder="Comments go here"></textarea>
+
+                    <div class="accordion">
+                        <div class="accordion__item">
+                            <input id="project-1" type="checkbox">
+                            <label class="accordion__label" for="project-1">
+                                <span>Project 1</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="project-2" type="checkbox">
+                            <label class="accordion__label" for="project-2">
+                                <span>Project 2</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="project-3" type="checkbox">
+                            <label class="accordion__label" for="project-3">
+                                <span>Project 3</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="project-4" type="checkbox">
+                            <label class="accordion__label" for="project-4">
+                                <span>Project 4</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="project-5" type="checkbox">
+                            <label class="accordion__label" for="project-5">
+                                <span>Project 5</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="project-6" type="checkbox">
+                            <label class="accordion__label" for="project-6">
+                                <span>Project 6</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="project-7" type="checkbox">
+                            <label class="accordion__label" for="project-7">
+                                <span>Project 7</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="project-8" type="checkbox">
+                            <label class="accordion__label" for="project-8">
+                                <span>Project 8</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="project-9" type="checkbox">
+                            <label class="accordion__label" for="project-9">
+                                <span>Project 9</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="comments-form">
+                        <span class="comments-form__label">Comments:</span>
+                        <textarea class="comments-form__comments" placeholder="Comments go here"></textarea>
                     </div>
                 </div>
-                <div class="column">
-                        <div class="column__content">
+            </div>
+            <div class="column">
+                <div class="column__content">
                     <div class="column-header">
                         <span class="column-header__text">Timelines</span>
                         <svg class="column-header__icon">
-                                <use xlink:href="img/sprite.svg#icon-video-solid"></use>
+                            <use xlink:href="img/sprite.svg#icon-video-solid"></use>
                         </svg>
                     </div>
-                    <div class="comments-form">
-                            <span class="comments-form__label">Comments:</span>
-                            <textarea class="comments-form__comments" placeholder="Comments go here"></textarea>
+
+                    <div class="accordion">
+                        <div class="accordion__item">
+                            <input id="timeline-1" type="checkbox">
+                            <label class="accordion__label" for="timeline-1">
+                                <span>Timeline 1</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="timeline-2" type="checkbox">
+                            <label class="accordion__label" for="timeline-2">
+                                <span>Timeline 2</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="timeline-3" type="checkbox">
+                            <label class="accordion__label" for="timeline-3">
+                                <span>Timeline 3</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="timeline-4" type="checkbox">
+                            <label class="accordion__label" for="timeline-4">
+                                <span>Timeline 4</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="timeline-5" type="checkbox">
+                            <label class="accordion__label" for="timeline-5">
+                                <span>Timeline 5</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="timeline-6" type="checkbox">
+                            <label class="accordion__label" for="timeline-6">
+                                <span>Timeline 6</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="timeline-7" type="checkbox">
+                            <label class="accordion__label" for="timeline-7">
+                                <span>Timeline 7</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="timeline-8" type="checkbox">
+                            <label class="accordion__label" for="timeline-8">
+                                <span>Timeline 8</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="timeline-9" type="checkbox">
+                            <label class="accordion__label" for="timeline-9">
+                                <span>Timeline 9</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
                     </div>
+
+
+
+                    <div class="comments-form">
+                        <span class="comments-form__label">Comments:</span>
+                        <textarea class="comments-form__comments" placeholder="Comments go here"></textarea>
                     </div>
                 </div>
-                <div class="column">
-                        <div class="column__content">
+            </div>
+            <div class="column">
+                <div class="column__content">
                     <div class="column-header">
                         <span class="column-header__text">Project Owner</span>
                         <svg class="column-header__icon">
-                                <use xlink:href="img/sprite.svg#icon-video-solid"></use>
+                            <use xlink:href="img/sprite.svg#icon-video-solid"></use>
                         </svg>
                     </div>
-                    <div class="comments-form">
-                            <span class="comments-form__label">Comments:</span>
-                            <textarea class="comments-form__comments" placeholder="Comments go here"></textarea>
+
+                    <div class="accordion">
+                        <div class="accordion__item">
+                            <input id="owner-1" type="checkbox">
+                            <label class="accordion__label" for="owner-1">
+                                <span>Project Owner 1</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="owner-2" type="checkbox">
+                            <label class="accordion__label" for="owner-2">
+                                <span>Project Owner 2</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="owner-3" type="checkbox">
+                            <label class="accordion__label" for="owner-3">
+                                <span>Project Owner 3</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="owner-4" type="checkbox">
+                            <label class="accordion__label" for="owner-4">
+                                <span>Project Owner 4</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="owner-5" type="checkbox">
+                            <label class="accordion__label" for="owner-5">
+                                <span>Project Owner 5</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="owner-6" type="checkbox">
+                            <label class="accordion__label" for="owner-6">
+                                <span>Project Owner 6</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="owner-7" type="checkbox">
+                            <label class="accordion__label" for="owner-7">
+                                <span>Project Owner 7</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="owner-8" type="checkbox">
+                            <label class="accordion__label" for="owner-8">
+                                <span>Project Owner 8</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="owner-9" type="checkbox">
+                            <label class="accordion__label" for="owner-9">
+                                <span>Project Owner 9</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
                     </div>
+
+
+
+
+                    <div class="comments-form">
+                        <span class="comments-form__label">Comments:</span>
+                        <textarea class="comments-form__comments" placeholder="Comments go here"></textarea>
                     </div>
                 </div>
-                <div class="column">
-                        <div class="column__content">
+            </div>
+            <div class="column">
+                <div class="column__content">
                     <div class="column-header">
                         <span class="column-header__text">Expertise</span>
                         <svg class="column-header__icon">
-                                <use xlink:href="img/sprite.svg#icon-video-solid"></use>
+                            <use xlink:href="img/sprite.svg#icon-video-solid"></use>
                         </svg>
                     </div>
+
+                    <div class="accordion">
+                        <div class="accordion__item">
+                            <input id="expertise-1" type="checkbox">
+                            <label class="accordion__label" for="expertise-1">
+                                <span>Expertise 1</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="expertise-2" type="checkbox">
+                            <label class="accordion__label" for="expertise-2">
+                                <span>Expertise 2</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="expertise-3" type="checkbox">
+                            <label class="accordion__label" for="expertise-3">
+                                <span>Expertise 3</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="expertise-4" type="checkbox">
+                            <label class="accordion__label" for="expertise-4">
+                                <span>Expertise 4</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="expertise-5" type="checkbox">
+                            <label class="accordion__label" for="owner-5">
+                                <span>Expertise 5</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="expertise-6" type="checkbox">
+                            <label class="accordion__label" for="expertise-6">
+                                <span>Expertise 6</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="expertise-7" type="checkbox">
+                            <label class="accordion__label" for="expertise-7">
+                                <span>Expertise 7</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="expertise-8" type="checkbox">
+                            <label class="accordion__label" for="expertise-8">
+                                <span>Expertise 8</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input id="expertise-9" type="checkbox">
+                            <label class="accordion__label" for="expertise-9">
+                                <span>Expertise 9</span>
+                                <svg class="accordion__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-down-solid"></use>
+                                </svg>
+                            </label>
+                            <div class="accordion__text">
+                                <textarea class="accordion__input"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="comments-form">
-                            <span class="comments-form__label">Comments:</span>
-                            <textarea class="comments-form__comments" placeholder="Comments go here"></textarea>
+                        <span class="comments-form__label">Comments:</span>
+                        <textarea class="comments-form__comments" placeholder="Comments go here"></textarea>
                     </div>
-                    </div>
                 </div>
+            </div>
 
-            </main>
+        </main>
 
-            <footer class="footer">
-                <div class="footer__box footer__box--alt">
-                    <svg class="footer__icon footer__icon--alt">
-                        <use xlink:href="img/sprite.svg#icon-plus-solid"></use>
-                    </svg>
+        <footer class="footer">
+            <div class="footer__box footer__box--alt">
+                <svg class="footer__icon footer__icon--alt">
+                    <use xlink:href="img/sprite.svg#icon-plus-solid"></use>
+                </svg>
 
-                    <span class="footer__text--margin">Create a new Roadmap</span>
-                </div>
-                <div class="footer__box">
-                    <span class="footer__text--light-gray">Schedule</span>&nbsp;  a Workshop
-                </div>
-                <div class="footer__box">
-                    <span class="footer__text--light-gray">Get</span>&nbsp; Help
-                </div>
-                <div class="footer__box">
-                    <svg class="footer__icon">
-                        <use xlink:href="img/sprite.svg#icon-video-solid"></use>
-                    </svg>
-                    <span class="footer__text--light-gray footer__text--margin">Watch</span>&nbsp; Tutorial
-                </div>
-            </footer>
-        </div>
+                <span class="footer__text--margin">Create a new Roadmap</span>
+            </div>
+            <div class="footer__box">
+                <span class="footer__text--light-gray">Schedule</span>&nbsp; a Workshop
+            </div>
+            <div class="footer__box">
+                <span class="footer__text--light-gray">Get</span>&nbsp; Help
+            </div>
+            <div class="footer__box">
+                <svg class="footer__icon">
+                    <use xlink:href="img/sprite.svg#icon-video-solid"></use>
+                </svg>
+                <span class="footer__text--light-gray footer__text--margin">Watch</span>&nbsp; Tutorial
+            </div>
+        </footer>
+    </div>
 
-        <!-- <img src="img/StoryBoard_08102018.png"> -->
-    </body>
+    <!-- <img src="img/StoryBoard_08102018.png"> -->
+</body>
+
 </html>
