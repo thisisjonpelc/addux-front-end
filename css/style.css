@@ -18,7 +18,8 @@ body {
   line-height: 1.2; }
 
 .accordion {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
   padding: 0 1.8rem; }
   .accordion__item {
     margin: 1.5rem 0; }
