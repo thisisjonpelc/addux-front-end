@@ -2,7 +2,6 @@ console.log("SCRIPT LOADED");
 
 var labels = document.querySelectorAll(".accordion__label");
 
-
 for(var i = 0; i < labels.length; i++){
     labels[i].addEventListener("click", function(e){
         //console.log(e);
@@ -32,3 +31,18 @@ for(var i = 0; i < labels.length; i++){
 
     });
 }
+
+var leftButton = document.querySelector("#scroll-left");
+var rightButton = document.querySelector("#scroll-right");
+var mainContent = document.querySelector(".main-content");
+
+leftButton.onclick = function(){
+    console.log("SCROLL LEFT!");
+    mainContent.scrollLeft = mainContent.scrollLeft - 100;
+}
+
+rightButton.onclick = function(){
+    console.log("SCROLL RIGHT!");
+    mainContent.scrollLeft = mainContent.scrollLeft + 100;
+}
+

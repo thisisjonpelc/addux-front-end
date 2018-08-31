@@ -2,6 +2,7 @@
     height:100vh;
     display:flex;
     flex-direction: column;
+    position:relative;
 }
 
 .header{
@@ -17,8 +18,9 @@
     //background-color:yellow;
     display:flex;
     flex: 1;
-    overflow-y:scroll;
-    padding:0 2.1rem;
+    overflow:auto;
+    padding:0 2.2rem;
+    //position:relative;
 }
 
 .footer{
