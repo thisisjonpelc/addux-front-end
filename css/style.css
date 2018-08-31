@@ -67,7 +67,8 @@ body {
   border-right: 1px solid #333333; }
   @media only screen and (max-width: 37.5em) {
     .addux-list {
-      width: 100%; } }
+      width: 100%;
+      left: -100%; } }
   .addux-list__list {
     overflow: auto; }
   .addux-list__close {
@@ -217,7 +218,8 @@ body {
     resize: none;
     margin-left: 1.7rem;
     border: none;
-    height: 5rem; }
+    height: 5.5rem;
+    padding: 1rem; }
     .comments-form__comments:focus {
       outline-color: #333333; }
 
