@@ -46,3 +46,16 @@ rightButton.onclick = function(){
     mainContent.scrollLeft = mainContent.scrollLeft + 100;
 }
 
+var appNavigation = document.querySelector(".app-nav");
+var listButton = appNavigation.children[3];
+var adduxList = document.querySelector(".addux-list");
+
+listButton.onclick = function(){
+    console.log("CLICKED LIST BUTTON");
+    adduxList.classList.toggle("addux-list--active");
+}
+
+adduxList.children[0].onclick = function(){
+    console.log("CLICKED CLOSE BUTTON");
+    adduxList.classList.remove("addux-list--active");
+}

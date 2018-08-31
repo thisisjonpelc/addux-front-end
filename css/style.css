@@ -38,7 +38,8 @@ body {
     color: #FFFFFF;
     align-items: center;
     padding: 0 2rem;
-    border: 1px solid #e6e6e6; }
+    border: 1px solid #e6e6e6;
+    cursor: pointer; }
   .accordion__text {
     height: 0px;
     overflow: hidden;
@@ -50,6 +51,48 @@ body {
     fill: #FFFFFF;
     transition: all .3s ease-in-out; }
 
+.addux-list {
+  width: 30rem;
+  position: absolute;
+  background-color: #e6e6e6;
+  top: 0;
+  left: -30rem;
+  height: 100vh;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-right: 1px solid #333333; }
+  .addux-list__close {
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    fill: #333333;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem; }
+    .addux-list__close:hover {
+      fill: #000000; }
+  .addux-list__item {
+    border-top: 1px solid #505050;
+    border-bottom: 1px solid #505050;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 1.6rem;
+    background-color: #505050;
+    color: #FFFFFF;
+    cursor: pointer; }
+    .addux-list__item:hover {
+      background-color: #cccccc;
+      color: #505050; }
+    .addux-list__item--active {
+      color: #505050;
+      background-color: #FFFFFF; }
+  .addux-list--active {
+    left: 0px; }
+
 .addux-textarea {
   resize: none;
   height: 10rem;
@@ -57,7 +100,9 @@ body {
   border: 1px solid #e6e6e6;
   border-top: none;
   outline: none;
-  font-family: "Georgia", serif; }
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  padding: 1rem; }
   .addux-textarea--single {
     border-top: 1px solid #e6e6e6;
     margin: 1.5rem 1.8rem;
@@ -82,7 +127,8 @@ body {
       fill: #FFFFFF;
       background-color: #7798A6; }
       .app-nav__icon-box--invert:hover {
-        color: #505050; }
+        color: #505050;
+        background-color: #FFFFFF; }
   .app-nav__icon {
     height: 2rem;
     width: 2rem;
