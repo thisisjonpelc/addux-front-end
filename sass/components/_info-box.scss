@@ -12,6 +12,10 @@
         background-color:$gray-light;
         border-radius: 1000px;
         position:relative;
+
+        @include respond(tab-land) { // width < 1200?
+            width:40rem;
+        }
     
         &::after{
             content:"";
@@ -22,6 +26,10 @@
             border-radius:1000px;
             top:0px;
             left:0px;
+
+            @include respond(tab-land) { // width < 1200?
+                width:20rem;
+            }
         }
     
     }

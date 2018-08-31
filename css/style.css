@@ -8,6 +8,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
 
 body {
   box-sizing: border-box; }
@@ -61,13 +64,15 @@ body {
   z-index: 200;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   border-right: 1px solid #333333; }
+  .addux-list__list {
+    overflow: auto; }
   .addux-list__close {
     cursor: pointer;
     height: 3rem;
     width: 3rem;
     fill: #333333;
+    align-self: flex-end;
     margin-top: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem; }
@@ -111,7 +116,8 @@ body {
 
 .app-nav {
   display: flex;
-  fill: #999999; }
+  fill: #999999;
+  margin-right: 9rem; }
   .app-nav__icon-box {
     align-items: center;
     display: flex;
@@ -218,6 +224,9 @@ body {
   background-color: #cccccc;
   border-radius: 1000px;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .info-box__progress-bar {
+      width: 40rem; } }
   .info-box__progress-bar::after {
     content: "";
     width: 25rem;
@@ -227,13 +236,16 @@ body {
     border-radius: 1000px;
     top: 0px;
     left: 0px; }
+    @media only screen and (max-width: 75em) {
+      .info-box__progress-bar::after {
+        width: 20rem; } }
 
 .logo {
   height: 3rem;
   margin-right: 6rem; }
 
 .scroll-button {
-  position: absolute;
+  position: fixed;
   background-color: #e6e6e6;
   z-index: 100;
   display: flex;
@@ -260,12 +272,16 @@ body {
   display: flex;
   flex-direction: column;
   position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .app {
+      height: auto;
+      min-height: 100vh; } }
 
 .header {
   display: flex;
+  flex-wrap: wrap;
   padding: 1rem 2.5rem;
-  align-items: flex-end;
-  justify-content: space-between; }
+  align-items: flex-end; }
 
 .main-content {
   display: flex;
@@ -277,6 +293,9 @@ body {
   height: 3.5rem;
   display: flex;
   border-top: 0.3rem solid #7798A6; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      display: none; } }
   .footer div:not(:last-child) {
     border-right: 0.3rem solid #7798A6; }
   .footer__box {
@@ -288,14 +307,17 @@ body {
     font-weight: 900;
     justify-content: center;
     text-transform: uppercase;
-    width: 26.5%; }
+    width: 26%; }
     .footer__box--alt {
       background-color: #7798A6;
       color: white;
       fill: white;
       font-size: 1.6rem;
       font-weight: 700;
-      width: 20.5%; }
+      width: 22%; }
+      @media only screen and (max-width: 75em) {
+        .footer__box--alt {
+          font-size: 1.4rem; } }
   .footer__icon {
     height: 3.1rem;
     width: 2rem; }
