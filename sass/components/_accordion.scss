@@ -1,8 +1,12 @@
 .accordion{
     
     margin:1.5rem 0;
-    overflow-x:auto;
+    overflow:auto;
     padding: 0 1.8rem;
+
+    @include respond(tab-port) { // width < 1200?
+        overflow:visible;
+    }
 
     &__item{
 
@@ -14,7 +18,7 @@
             &:checked{
                 
                 & ~ .accordion__text{
-                    height:10rem;
+                    height:5rem;
                 }
 
                 & ~ .accordion__label .accordion__icon{
